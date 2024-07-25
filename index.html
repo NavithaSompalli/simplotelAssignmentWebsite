@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+        }
+        .restaurant-container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .restaurant-container img {
+            width: 100%;
+            height: auto;
+        }
+        .restaurant-text {
+            position: absolute;
+            top: 40%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            background-color: #db6f51;
+            opacity: 0.7;
+            padding: 20px;
+            border-radius: 10px;
+            width:30%;
+            text-align: left;
+        }
+        .order-section {
+            text-align: center;
+            padding: 50px 0;
+            background: linear-gradient(to right,#f542f5, #ff7e5f,#dbb251);
+        }
+        .order-section h2 {
+            margin-bottom: 30px;
+            color: #fff;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .order-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding:10px;
+        }
+        .order-card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            margin: 10px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+        .order-card img {
+            width: 95%;
+            height:80%;
+            margin: 10px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;      
+        }
+        .order-card h3 {
+            margin: 10px 0;
+        }
+        .order-card p {
+            padding: 0 20px;
+            margin-bottom: 20px;
+        }
+        .order-button {
+            background-color: #ff7e5f;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .order-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .restaurant-text{
+                width:70%;
+                
+            }
+        }
+        
+        .order-button{
+            height:40px;
+            width:120px;
+            border-radius: 40px;
+            color:#000000;
+            font-weight: bold;
+            background-color: #807f78;
+            opacity: 0.3;
+        }
+        .order-sec-heading{
+            color:#fff;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#order">Order</a>
+            <a href="#">Food</a>
+            <a href="#">Restaurant</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+    <section class="restaurant-container">
+        <img src="https://res.cloudinary.com/dqyqjbuku/image/upload/v1721881360/img1sim_xk2to5.jpg" alt="Hero Image">
+        <div class="restaurant-text">
+            <h1>LOREM IPSUM</h1>
+            <p>Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took  a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+    </section>
+    <section class="order-section" id="order">
+        <h1 class="order-sec-heading"> Order Now</h1>
+        <div class="order-cards">
+            <div class="order-card">
+                <img src="https://res.cloudinary.com/dqyqjbuku/image/upload/v1721881650/img4sim_fzrjum.jpg" alt="Burger" >
+                <h3>BURGER</h3>
+                <p>Lorem ipsum has been the industry's standard dummy text</p>
+            </div>
+            <div class="order-card">
+                <img src="https://res.cloudinary.com/dqyqjbuku/image/upload/v1721881477/img2sim_gnnsph.jpg" alt="Pizza" >
+                <h3>PIZZA</h3>
+               <p>Lorem ipsum has been the industry's standard dummy text</p>
+            </div>
+            <div class="order-card">
+                <img src="https://res.cloudinary.com/dqyqjbuku/image/upload/v1721881570/img3sim_eoyngb.jpg" alt="Pasta" >
+                <h3>PASTA</h3>
+                <p>Lorem ipsum has been the industry's standard dummy text</p>
+            </div>
+            
+        </div>
+        <button class="order-button">Order </button>
+        </section>
+  </body>
+  </html>
+
+
